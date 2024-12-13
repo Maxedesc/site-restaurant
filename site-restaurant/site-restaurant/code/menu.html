@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez en détail les spécialités du Restaurant Montagnard.">
+    <title>Nos Spécialités - Restaurant Montagnard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #d31010;
+            color: #333;
+            padding: 1rem;
+        }
+
+        header {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 1rem 0;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        nav {
+            text-align: center;
+            margin: 1rem 0;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            margin: 2rem auto;
+            max-width: 1200px;
+        }
+
+        .specialites {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .specialite {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .specialite img {
+            width: 100%;
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        .specialite h2 {
+            font-size: 1.8rem;
+            margin: 0.5rem 0;
+        }
+
+        .specialite p {
+            color: #555;
+            font-size: 1.1rem;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Nos Spécialités</h1>
+</header>
+
+<nav>
+    <a href="index.html">Accueil</a>
+    <a href="#menu">Nos spécialités</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section>
+    <div class="specialites">
+        <div class="specialite">
+            <img src="../img/fondue.png" alt="Fondue du chalet">
+            <h2>Fondue du chalet</h2>
+            <p>Notre célèbre fondue montagnarde est un mélange subtil de fromages artisanaux. Idéal à partager entre amis, elle est servie avec des morceaux de pain croustillants.</p>
+        </div>
+        <div class="specialite">
+            <img src="../img/grillades.jpg" alt="Grillades des Alpes">
+            <h2>Grillades des Alpes</h2>
+            <p>Des viandes locales soigneusement sélectionnées et grillées à la perfection, accompagnées de légumes de saison et d'une sauce maison.</p>
+        </div>
+        <div class="specialite">
+            <img src="../img/gateaumyrtilles.jpg" alt="Douceur montagnarde">
+            <h2>Douceur montagnarde</h2>
+            <p>Un dessert incontournable à base de myrtilles sauvages, de crème fouettée et d'un biscuit moelleux. Une douceur parfaite pour terminer votre repas.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Restaurant Montagnard. Tous droits réservés.</p>
+</footer>
+</body>
+</html>
