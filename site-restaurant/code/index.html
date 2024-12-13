@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Restaurant Montagnard, spécialités authentiques de la montagne.">
+  <title>Restaurant L'Authentique Montagnard</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #d31010;
+      color: #333;
+    }
+
+    header {
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      text-align: center;
+    }
+
+    .search-bar {
+      margin-top: 1rem;
+    }
+
+    .search-bar form {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+
+    .search-bar input[type="text"] {
+      padding: 0.5rem;
+      width: 300px;
+      border: none;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .search-bar button {
+      padding: 0.5rem 1rem;
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .search-bar button:hover {
+      background-color: #555;
+    }
+
+    nav {
+      background: #333;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .specialites {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .specialite {
+      background: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      width: 300px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .specialite img {
+      width: 100%;
+      border-radius: 8px 8px 0 0;
+    }
+
+    .specialite h3 {
+      font-size: 1.5rem;
+      margin: 1rem 0;
+    }
+
+    .specialite p {
+      padding: 0 1rem 1rem;
+      color: #555;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    footer p {
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Bienvenue au Restaurant Montagnard</h1>
+  <div class="search-bar">
+    <form action="recherche.html" method="get">
+      <input type="text" name="q" placeholder="Rechercher..." aria-label="Recherche">
+      <button type="submit">Rechercher</button>
+    </form>
+  </div>
+</header>
+
+<nav>
+  <a href="#about">À propos</a>
+  <a href="menu.html">Nos spécialités</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>À propos de nous</h2>
+  <p>Découvrez des recettes uniques et authentiques inspirées par la culture montagnarde, préparées avec des ingrédients locaux et de saison.</p>
+</section>
+
+<section id="menu">
+  <h2>Nos spécialités</h2>
+  <div class="specialites">
+    <div class="specialite">
+      <img src="../img/fondue.png" alt="Fondue du chalet">
+      <h3>Fondue du chalet</h3>
+      <p>Un mélange subtil de fromages artisanaux à savourer entre amis.</p>
+    </div>
+    <div class="specialite">
+      <img src="../img/grillades.jpg" alt="Grillades des Alpes">
+      <h3>Grillades des Alpes</h3>
+      <p>Des viandes locales grillées accompagnées de légumes frais.</p>
+    </div>
+    <div class="specialite">
+      <img src="../img/gateaumyrtilles.jpg" alt="Douceur montagnarde">
+      <h3>Douceur montagnarde</h3>
+      <p>Un dessert gourmand à base de myrtilles sauvages et de crème.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contactez-nous</h2>
+  <p>Email : contact@tprestauraunt.com</p>
+  <p>Téléphone : +33 6 77 88 99 00</p>
+  <p>Adresse : 96 Rue Henri Depagneux, 69400 Limas, France</p>
+</section>
+
+<footer>
+  <p>&copy; 2024 Restaurant Montagnard. Tous droits réservés.</p>
+</footer>
+</body>
+</html>
