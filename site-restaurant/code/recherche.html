@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page de recherche du Restaurant Montagnard.">
+    <title>Recherche - Restaurant Montagnard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #d31010;
+            color: #333;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        header {
+            background: #333;
+            color: white;
+            padding: 1rem;
+        }
+
+        header h1 {
+            font-size: 2rem;
+        }
+
+        form {
+            margin-top: 2rem;
+        }
+
+        input[type="text"] {
+            padding: 0.5rem;
+            width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 0.5rem 1rem;
+            background-color: #fd8800;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #a10c0c;
+        }
+
+        .results {
+            margin-top: 2rem;
+        }
+
+        .results p {
+            font-size: 1.2rem;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Résultats de recherche</h1>
+</header>
+
+<form action="recherche.html" method="get">
+    <input type="text" name="q" placeholder="Tapez votre recherche..." value="">
+    <button type="submit">Rechercher</button>
+</form>
+
+<div class="results">
+    <p>Aucun résultat pour l'instant. Veuillez entrer une recherche.</p>
+</div>
+</body>
+</html>
